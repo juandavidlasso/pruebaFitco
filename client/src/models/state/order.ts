@@ -3,6 +3,7 @@ export interface ProductProps {
 	productId: number
 	amount: number
 	total: number
+	image: string
 }
 
 export interface ItemsProps {

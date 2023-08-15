@@ -13,12 +13,14 @@ const Header: React.FC = () => {
 	const handleLogout = () => {
 		dispatch(saveItem({
 			name: '',
+			image: '',
 			productId: 0,
 			amount: 0,
 			total: 0
 		}))
 		sessionStorage.removeItem('token')
 		sessionStorage.clear()
+		localStorage.clear()
 		navigate('/signin')
 	}
 

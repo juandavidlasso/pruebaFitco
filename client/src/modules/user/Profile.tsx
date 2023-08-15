@@ -10,8 +10,6 @@ const Profile: React.FC = () => {
 
 	const { items, user } = useSelector( (state: IRootState) => state.orderReducer)
 	const [listProducts, setListProducts] = useState<GetProductProps[]>([])
-	console.log('111',items);
-	
 
 	useEffect(() => {
 		const fetchProducts = async () => {

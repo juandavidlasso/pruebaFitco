@@ -27,6 +27,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
 		}
 		dispatch(saveItem({
 			name,
+			image,
 			productId: idProduct,
 			amount: cantity,
 			total: price * cantity

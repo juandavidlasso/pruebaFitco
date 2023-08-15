@@ -76,7 +76,7 @@ const CreateProduct: React.FC = () => {
 	return (
 		<div className="relative flex flex-col justify-center min-h-screen overflow-hidden mt-5 mb-5">
 			<div className='w-full flex justify-start h-[50px] py-2'>
-				<Link to='/profile' className="w-[10%] ml-8 flex items-center justify-center h-full px-3 py-4 text-lg font-bold tracking-wide text-white transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+				<Link to='/profile' className="w-[10%] ml-8 flex items-center justify-center h-full px-3 py-6 text-lg font-bold tracking-wide text-white transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
 					Back
 				</Link>
 			</div>

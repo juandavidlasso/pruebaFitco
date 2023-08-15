@@ -18,6 +18,7 @@ const initialState: OrderState = {
 	items: [
 		{
 			name: '',
+			image: '',
 			productId: 0,
 			amount: 0,
 			total: 0

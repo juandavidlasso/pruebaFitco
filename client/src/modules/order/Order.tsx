@@ -18,7 +18,7 @@ const Order: React.FC = () => {
 		try {
 			const newItems = items.filter((item) => item.productId !== 0)
 
-			const itemsSave = newItems.map( ({ name, ...rest}) => {
+			const itemsSave = newItems.map( ({ name, image, ...rest}) => {
 				return rest
 			})
 
@@ -38,6 +38,7 @@ const Order: React.FC = () => {
 			}).then( () => {
 				dispatch(saveItem({
 					name: '',
+					image: '',
 					productId: 0,
 					amount: 0,
 					total: 0
@@ -86,10 +87,15 @@ const Order: React.FC = () => {
 						</div>
 						<div className='w-full py-2 px-0'>
 							{items.filter( (item) => item.productId !== 0).map( (item, index) => (
-								<div key={index} className='w-full border-[1px] border-gray-300 rounded-md pl-3 mb-2'>
-									<h1 className='font-bold text-md text-black'>Name: {item.name}</h1>
-									<h1 className='font-bold text-md text-black'>Amount: {item.amount}</h1>
-									<h1 className='font-bold text-md text-black mb-4'>Total: $ {item.total.toFixed(2)}</h1>
+								<div key={index} className='w-full grid grid-cols-2 border-[1px] border-gray-300 rounded-md pl-3 mb-2'>
+									<div className='w-full'>
+										<h1 className='font-bold text-md text-black'>Name: {item.name}</h1>
+										<h1 className='font-bold text-md text-black'>Amount: {item.amount}</h1>
+										<h1 className='font-bold text-md text-black mb-4'>Total: $ {item.total.toFixed(2)}</h1>
+									</div>
+									<div className='w-full flex justify-center items-center'>
+										<img src={`http://localhost:8080/images/${item.image}`} alt={item.name} height='40px' width='40px' />
+									</div>
 								</div>
 							))}
 						</div>
