@@ -63,11 +63,11 @@ axios: Permite realizar solicitudes al servidor.
 
 4. Utilizar un servidor web loca de conexón para la base de datos, en mi caso utilice XAMPP.
 
-5. En la consola dentro del proyecto server, acceder a src, ejecutar el comando 'npx sequelize-cli db:migrate' para migrar las tablas a la base de datos.
+5. Dentro de la carpeta server/src/config cambiar las credenciales de la configuración de 'development', ya que sequelize no permite utilizar variables de entorno para ambiente de desarrollo.
 
-6. Ahí mismo ejecutar el comando 'npx sequelize-cli db:seed:all' para migrar un usuario administrador de prueba.
+6. En la consola dentro del proyecto server, acceder a src, ejecutar el comando 'npx sequelize-cli db:migrate' para migrar las tablas a la base de datos.
 
-7. Dentro de la carpeta server/src/config cambiar las credenciales de la configuración de 'development', ya que sequelize no permite utilizar variables de entorno para ambiente de desarrollo.
+7. Ahí mismo ejecutar el comando 'npx sequelize-cli db:seed:all' para migrar un usuario administrador de prueba.
 
 8. Ahí mismo ejecutar el comando 'npm run dev' para iniciar el servidor.
 
