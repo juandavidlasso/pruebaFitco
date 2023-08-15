@@ -39,4 +39,7 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-module.exports = db;
+// References models
+db.Users = require('./users.ts')(sequelize, Sequelize)
+
+export default db;
