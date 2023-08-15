@@ -3,6 +3,7 @@ import cors from 'cors'
 import path from 'path';
 import authRoutes from './routes/auth-routes'
 import productsRoutes from './routes/product-routes'
+import orderRouts from './routes/order-routes'
 
 const app: Application = express();
 
@@ -17,6 +18,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(authRoutes)
 // Products routes
 app.use(productsRoutes)
+// Order routes
+app.use(orderRouts)
 
 // Parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));

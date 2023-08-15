@@ -42,5 +42,7 @@ db.Sequelize = Sequelize;
 // References models
 db.Users = require('./users.ts')(sequelize, Sequelize)
 db.Products = require('./products.ts')(sequelize, Sequelize)
+db.Items = require('./items.ts')(sequelize, Sequelize)
+db.Orders = require('./orders.ts')(sequelize, Sequelize)
 
 export default db;
