@@ -70,6 +70,7 @@ const Order: React.FC = () => {
 				navigate('/profile')
 			})
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 	
 	return (
