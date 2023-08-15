@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux'
+import { store, persistor } from './core/store';
+import { PersistGate } from 'redux-persist/integration/react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(
@@ -10,9 +13,13 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-	<Router>
-		<App />
-	</Router>
+	<Provider store={store}>
+		<PersistGate persistor={persistor}>
+			<Router>
+				<App />
+			</Router>
+		</PersistGate>
+	</Provider>
   </React.StrictMode>
 );
 
