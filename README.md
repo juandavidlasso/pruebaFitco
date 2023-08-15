@@ -4,25 +4,25 @@
 
 
 2. #commit 2: Configuración inicial del servidor
-express: Crear el servidor
-dotenv: Acceder a las variables de entorno
-cors: Middleware para permitir solicitudes http
+## express: Crear el servidor
+## dotenv: Acceder a las variables de entorno
+## cors: Middleware para permitir solicitudes http
 
 
 3. #commit 3: Creación de rutas, controladores y configuración inicial de sequelize cli
-sequelize: ORM para base de datos
-sequelize-cli: Permite la creación de modelos, migraciones y seeders
-mysql2: Conexión con la base de datos de MySQL
+## sequelize: ORM para base de datos
+## sequelize-cli: Permite la creación de modelos, migraciones y seeders
+## mysql2: Conexión con la base de datos de MySQL
 
 
 4. #commit 4: Creación de modelos y migraciones con sequelize y funciones para iniciar sesión y registrar usuario
-bcryptjs: Permite crear hash para el password
-jsonwebtoken: Permite crear token de autenticación
+## bcryptjs: Permite crear hash para el password
+## jsonwebtoken: Permite crear token de autenticación
 
 
 
 5. #commit 5: Creación de funciones para crear y consultar productos
-multer: Permite cargar imágenes a la base de datos
+## multer: Permite cargar imágenes a la base de datos
 
 
 6. #commit 6: Creación de funciones para crear y consultar ordenes
@@ -30,7 +30,7 @@ Servidor creado.
 
 
 7. #commit 7: Creación de la vista de SignIn y SignUp y configuración de tailwindcss como framework css
-sweetalert2: Permite mostrar mensajes
+## sweetalert2: Permite mostrar mensajes
 
 
 
@@ -39,7 +39,7 @@ sweetalert2: Permite mostrar mensajes
 
 
 9. #commit 9: Configuración de servicios con axios para peticiones http y funciones para iniciar sesión y registrar usuario
-axios: Permite realizar solicitudes al servidor
+## axios: Permite realizar solicitudes al servidor
 
 
 10. #commit 10: Creación del perfil y funciones para listar los productos
@@ -74,7 +74,7 @@ axios: Permite realizar solicitudes al servidor
 9. En la consola dentro de la carpeta client, ejecutar el comando 'npm start' para iniciar la aplicación.
 
 10. Para probar el proyecto tiene un usuario administrador registrado con estos datos:
-email: fitco@gmail.com
-password: Fitco123@
+## email: fitco@gmail.com
+## password: Fitco123@
 
 11. Puede registrarse y probar la aplicación.
